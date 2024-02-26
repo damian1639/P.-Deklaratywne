@@ -42,3 +42,17 @@ X = d.
 Na jakim klocku lezy klocek c.
 ?- na(c,X).
 X = a 
+
+Czy w ogole jakis klocek lezy na c?
+?- na(_,c).
+true.
+
+Czy klocek a lezy na jakims klocku?
+?- na(a,_).
+false.
+
+Klocek c lezy jednoczesnie na klocku a i b.
+?- na(X,a), na(X,b).
+X = c.
+
+
