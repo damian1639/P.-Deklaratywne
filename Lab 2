@@ -132,7 +132,12 @@ false.
 ---------------------------------------------------------------
 Zadanie 2
 
-
+lubi(jerzy,sudety).
+lubi(jan,X).
+lubi(X,bieszczady).
+bratniaDusza(jan,_).
+bratniaDusza(X,justyna).
+bratniaDusza(X,Y).
 
 
 
