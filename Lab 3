@@ -1,0 +1,24 @@
+mieszka(iza,dworcowa).
+mieszka(piotr,dworcowa).
+mieszka(pawel,dworcowa).
+
+mieszka(ania,poziomkowa).
+mieszka(kasia,poziomkowa).
+mieszka(ola,poziomkowa).
+
+mieszka(mariusz,mieszka(paweł,X)).
+
+sasiad(X,Y):-mieszka(X,U),mieszka(Y,U).
+/*
+
+1.true.
+
+2.X = ania ;
+X = kasia ;
+X = ola.
+
+3.X = iza ;
+X = piotr ;
+X = pawel.
+
+4.false.
