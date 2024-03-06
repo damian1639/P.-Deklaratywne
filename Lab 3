@@ -1,24 +1,37 @@
-mieszka(iza,dworcowa).
+mieszka(ola,dworcowa).
 mieszka(piotr,dworcowa).
-mieszka(pawel,dworcowa).
+mieszka(karol,dworcowa).
 
-mieszka(ania,poziomkowa).
-mieszka(kasia,poziomkowa).
-mieszka(ola,poziomkowa).
+mieszka(ania,ogrodowa).
+mieszka(pawel,ogrodowa).
 
-mieszka(mariusz,mieszka(paweł,X)).
+mieszka(kamil,irysowa).
+mieszka(gosia,irysowa).
+
+mieszka(marcin,mieszka(ola,X)).
 
 sasiad(X,Y):-mieszka(X,U),mieszka(Y,U).
-/*
 
-1.true.
+Program:
 
-2.X = ania ;
-X = kasia ;
-X = ola.
-
-3.X = iza ;
+?- mieszka(X,dworcowa).
+X = ola ;
 X = piotr ;
-X = pawel.
+X = karol.
 
-4.false.
+?- sasiad(X,ola).
+X = ola ;
+X = piotr ;
+X = karol ;
+false.
+
+?- sasiad(ola,X).
+X = ola ;
+X = piotr ;
+X = karol.
+
+?- sasiad(_,marcin).
+true.
+
+?- sasiad(karol,pawel).
+false.
