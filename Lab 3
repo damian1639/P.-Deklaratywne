@@ -8,30 +8,25 @@ mieszka(pawel,ogrodowa).
 mieszka(kamil,irysowa).
 mieszka(gosia,irysowa).
 
-mieszka(marcin,mieszka(ola,X)).
+mieszka(marcin,Y):-mieszka(ola,Y).
 
-sasiad(X,Y):-mieszka(X,U),mieszka(Y,U).
+sasiad(X,Y):-mieszka(X,U),mieszka(Y,U), X\==Y.
 
 Program:
 
 ?- mieszka(X,dworcowa).
 X = ola ;
 X = piotr ;
-X = karol.
-
-?- sasiad(X,ola).
-X = ola ;
-X = piotr ;
 X = karol ;
-false.
+X = marcin.
 
 ?- sasiad(ola,X).
-X = ola ;
 X = piotr ;
-X = karol.
+X = karol ;
+X = marcin.
 
 ?- sasiad(_,marcin).
 true.
 
-?- sasiad(karol,pawel).
+?- sasiad(karol,X), sasiad(pawel,X).
 false.
