@@ -20,6 +20,8 @@ bogata(ala).
 szczesliwy(X):-bogaty(X).
 7. Wszyscy mężczyźni lubią piękne kobiety.
 lubi(X,Y):- mezczyzna(X), kobieta(Y), piekny(Y).
+8*.Ola ma takie same hobby jak Anna.
+9*. Dwie osoby sie lubia jezeli maja takie same hobby.
 W tym celu zdefiniuj predykaty : kobieta/1, mezczyzna/1, madry/1, piękny/1, bogaty/1,
 szczęśliwy/1, lubi/2.
 b. Określ z ilu definicji predykatówi jakich składa się program, ile klauzul występuje w napisanym programie, które klauzule sa faktami, a które regułami.
