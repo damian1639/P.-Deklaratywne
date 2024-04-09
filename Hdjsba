@@ -1,0 +1,91 @@
+Zestaw 6
+
+Zad.1 (5 pkt.) Ktore z następujących wyrażeń są stałymi, zmiennymi, termami zlozonymi (podać nazwę funkcji i liczbę argumentów), a ktore nie sa w ogóle termami (uzasadni), dlaczego):
+
+czas
+
+zmiennal
+
+Zwierze
+
+kod przedmiotu
+
+numer indeksu
+
+ania kowalska
+
+rodzic(X)
+
+Kompozytor(bach)
+
+and(matka(X),dobra(X))
+
+'adam mickiewicz'
+
+Zad.2 (18 pkt.) a. Podaj określenie programu w Prologu oraz przedstaw w Prologu
+
+natepujące związki:
+
+1.Ala,Ola i Kasia to kobiety.
+
+2. Piotr i Adam to mężczyźni.
+
+3. Ala jest madra i bogata.
+
+4. Ola jest piękna i bogata.
+
+5. Kasia jest piękna i madra.
+
+6. Wszyscy bogaci ludzie są szczęśliwi.
+
+7. Wszyscy mężczyźni lubią piękne kobiety.
+
+W tym celu zdefiniuj predykaty : kobieta/1, mezczyzna/1, madry/1, piękny/1, bogaty/1,
+
+szczęśliwy/1, lubi/2.
+
+b. Określ z ilu definicji predykatówi jakich składa się program, ile klauzul występuje w napisanym programie, które klauzule sa faktami, a które regułami.
+
+c. Sformutuj cele odpowiadające na pytania:
+
+1. Czy Ala jest bogata?
+
+2. Kogo lubi Piotr?
+
+3. Czy Adam kogoś lubi?
+
+4. Kto jest szczęśliwy?
+
+Zad. 3 (15 pkt.) Dany jest następujący program:
+
+/*1+/ p(a,c).
+
+/*2*/ p(X,Y):-q(X,Z),r(Z,Y).
+
+/*3*/ q(a,b).
+
+/*4*/q(c,a).
+
+/*5*/r(a,d).
+
+/*6*/r(b,c).
+
+Przedstaw drzewo poszukiwań rozwiązań dla celu p(X,c). Podaj w oddzielnej odpowiedzi, jakie sa rozwiązania.
+
+Zad.4 (15 pkt.) Napisz program (przy pomocy definicji rekurencyjnej), przy pomocy którego będzie wyliczana długość listy L. Zapisz 2 przykładowe cele wraz z odpowiedziami jakie
+
+otrzymamy.
+
+Zad. 5 (5 pkt.) Czy można uzgodnić następujace listy? Jeżeli tak, wypisz podstawienia zmiennych, jeżeli nie, wyjaśnij
+
+dlaczego. [X,YIT] [ania,basia]
+
+(XIT) ([1]]
+
+[X,YIT] [b]
+
+[H|[H2|T]] [1,2,3]
+
+[X,Y,a,b,C] [a,b|[D,X,a]]
+
+Zad.6 (10 pkt.) Zdefiniuj predykat lista_mniejszao5(L1,L2), spełniony gdy elementy listy L2 sa odpowiednimi elementami listy L1 pomniejszonymi o 5 przy pomocy definicji z wykorzystaniem maplist.
