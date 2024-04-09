@@ -21,7 +21,12 @@ szczesliwy(X):-bogaty(X).
 7. Wszyscy mężczyźni lubią piękne kobiety.
 lubi(X,Y):- mezczyzna(X), kobieta(Y), piekny(Y).
 8*.Ola ma takie same hobby jak Anna.
+hobby(ola,Y) :- hobby(anna,Y).
 9*. Dwie osoby sie lubia jezeli maja takie same hobby.
+lubi(X,Y):-
+    hobby(X, Z),
+    hobby(Y, Z),   
+    X \= Y.
 W tym celu zdefiniuj predykaty : kobieta/1, mezczyzna/1, madry/1, piękny/1, bogaty/1,
 szczęśliwy/1, lubi/2.
 b. Określ z ilu definicji predykatówi jakich składa się program, ile klauzul występuje w napisanym programie, które klauzule sa faktami, a które regułami.
@@ -54,8 +59,7 @@ dlaczego.
 [X|T] [7] - mozna X=7, T=[]
 [X,YIT] [b] - nie mozna X=b, Y i T nie ma z czego uzgodnic
 [X,Y|T] [ania,basia,ola,karol] - mozna X-ania, Y-basia, T=[ola,karol]
-[H|[H2 T]] [1,2,3,4,6,7] - *moze byc zle* mozna H=1, H2 = 2, T=[3,4,6,7]
-[X,Y,a,b,C] [a,b|[D,b,a]] - *moze btyc zle* 
+[H|[H2 T]] [1,2,3,4,6,7] - *moze byc zle* mozna H=1, H2 = 2, T=[3,4,6,7] 
 
 Zad.6 (10 pkt.) Zdefiniuj predykat lista_mniejszao5(L1,L2), spełniony gdy elementy listy L2 sa odpowiednimi elementami listy L1 pomniejszonymi o 5 przy pomocy definicji z wykorzystaniem maplist.
 lista_mniejszao5(L1,L2):-maplist(mniejszao5,L1,L2).
