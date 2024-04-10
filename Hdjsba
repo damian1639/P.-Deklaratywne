@@ -49,7 +49,7 @@ szczesliwy(X).
 Zad.4 (15 pkt.) Napisz program (przy pomocy definicji rekurencyjnej), przy pomocy którego będzie wyliczana długość listy L. Zapisz 2 przykładowe cele wraz z odpowiedziami jakie
 otrzymamy.
 dlug_lista([],0).
-dlug_lista([_,T],N):- dlug_lista(T,N), N is N+1.
+dlug_lista([_|T],N):- dlug_lista(T,N1), N is N1+1.
 Przyklady:
 dlug_lista([1,2,3,4],N). odp. 4
 dlug_lista([1,2],N). odp.2
