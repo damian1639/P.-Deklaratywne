@@ -68,3 +68,10 @@ mniejszao5(X,Y):- Y is X-5.
 Zdefiniuj predykat sześcian_lista(L1,L2), spełniony gdy elementy listy L2 sa sześcianami odpowiednich elementów listy L1 przy pomocy definicji z wykorzystaniem maplist.
 szescian_lista(L1,L2):-maplist(szescian,L1,L2).
 szescian(X,Y):- Y is X*X*X.
+
+
+4.Zdefiniuj predykat szescian_lista(L1,L2) spelniony gdy elementy listy L2 sa szescianami elementow listy L1 przy pomocy definicji rekurencyjnej. Podaj dwa przykladowe cele wraz z odpoweidizami jakie otrzymamy w prologu
+szescian_lista([], []).
+szescian_lista([H1|T1], [H2|T2]) :-
+    H2 is H1 * H1 * H1,
+    szescian_lista(T1, T2).
